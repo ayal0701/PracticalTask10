@@ -18,7 +18,7 @@
         <org.slf4j.version>2.0.16</org.slf4j.version>
         <junit.jupiter.version>5.11.3</junit.jupiter.version>
         <!-- - - - - - Password - - - - - -->
-<!--        <application.password>null123</application.password>-->
+        <!--        <application.password>null123</application.password>-->
     </properties>
 
     <dependencies>
@@ -57,6 +57,12 @@
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-suite</artifactId>
             <version>1.11.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest</artifactId>
+            <version>2.2</version> <!-- or the latest version available -->
             <scope>test</scope>
         </dependency>
 
@@ -149,15 +155,15 @@
                 <version>3.5.1</version>
                 <configuration>
                     <includes>
-<!--                        <include>**/SuiteDemo.java</include>-->
+                        <!--                        <include>**/SuiteDemo.java</include>-->
                         <!-- <include>**/*Test.java</include> -->
                         <!-- <include>**/SimpleJUnit5.java</include> -->
                     </includes>
-<!--                    <systemPropertyVariables>-->
-<!--                        <surefire.application.password>-->
-<!--                            ${application.password}-->
-<!--                        </surefire.application.password>-->
-<!--                    </systemPropertyVariables>-->
+                    <!--                    <systemPropertyVariables>-->
+                    <!--                        <surefire.application.password>-->
+                    <!--                            ${application.password}-->
+                    <!--                        </surefire.application.password>-->
+                    <!--                    </systemPropertyVariables>-->
                 </configuration>
             </plugin>
 
