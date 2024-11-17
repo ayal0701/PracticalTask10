@@ -1,0 +1,5 @@
+input,expected
+input,expected
+test,TEST
+tEst,TEST
+Java,JAVA
